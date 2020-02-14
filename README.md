@@ -28,6 +28,6 @@ Step 5
 
  - Create a pull request (PR) to get your code merged to the master by the project coordinator/maintainer
 
- Happy Coding :-)
+ ``` Happy Coding :-)
 
 
