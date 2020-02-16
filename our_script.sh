@@ -1,15 +1,13 @@
-#line 7to20 by jimmy
-#get kernel
-get_kernel () {
-echo "Kernel Version is:- `uname -r` "
-}
-
-#get host name
-get_host () {
-echo "Host name is:- `hostname -s` "
-}
-
 #get OS version
-get_osver () {
-echo "OS is:- `uname -s`"
+print_hello () {
+echo -n "Enter User name:-"
+read our_string
+echo "Hello $our_string..!!"
+}
+
+# Trap the termination
+remove_lock () {
+echo "Interrupt Signal EXITING (Terminated by USER)....!!!!"
+rm -f $HOME/script.lock
+exit 1
 }
