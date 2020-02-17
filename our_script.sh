@@ -1,4 +1,20 @@
 
+#jimmy
+#get kernel
+get_kernel () {
+echo "Kernel Version is:- `uname -r` "
+}
+
+#get host name
+get_host () {
+echo "Host name is:- `hostname -s` "
+}
+
+#get OS version
+get_osver () {
+echo "OS is:- `uname -s`"
+}
+
 #get OS version
 print_hello () {
 echo -n "Enter User name:-"
@@ -61,4 +77,3 @@ until [ "$selection" = "0" ]; do
 done
 
 exit 0
-
